@@ -1,0 +1,264 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link href="css/format.css" rel="stylesheet" type="text/css">
+
+        <script type="text/javascript" src="js/libs/jquery-1.9.0/jquery.min.js"></script>
+        <script type="text/javascript" src="js/linked-list.js"></script>
+        <script type="text/javascript" src="js/greensock-12/TweenLite.js"></script>
+        <script type="text/javascript" src="js/greensock-12/plugins/CSSPlugin.js"></script>
+        <script type="text/javascript" src="js/greensock-12/plugins/CSSRulePlugin.js"></script>
+        <script type="text/javascript" src="js/greensock-12/easing/EasePack.js"></script>
+    </head>
+    <body>
+        <div id="content">
+            <div id="leftColumnS">
+                <div id="headerSalads" class="headers">
+                    <!-- headerSalads -->
+                    <h1>SALADS</h1>
+                    <h2>Good to eat with or without the meat!<br>Add chicken for 2.50 or shrimp for 3.00</h2>
+                </div>
+
+                <div class="itemsList itemsSalad" style="display: block; overflow: hidden; text-align: center;">
+                    <div class="sammiesListTop" id="sammiesTopLeft" style="width: 48%">
+                        <div class="item">
+                            <div class="itemTitle">
+                                <p>ub-que salad</p>
+                            </div>
+                            <div class="itemDescription">
+                                <p>Garden mix, pulled pork, corn, cheddar, onion, tortilla strips and
+                                    sprinkled with UB-QUE seasoning 7.99</p>
+                            </div>
+                        </div>
+                        <div class="itemTitle">
+                            <p>UB CEASAR SALAD</p>
+                        </div>
+                        <div class="itemDescription">
+                            <p>Crisp Romain Lettuce served with seasoned ciabatta croutons, jack 
+                                cheese and our UBEE'S Homemade Caesar Dressing 6.99</p>
+                        </div>
+                        <div class="itemTitle">
+                            <p>SPRING BREAK</p>
+                        </div>
+                        <div class="itemDescription">
+                            <p>Garden mix, grilled pepper/onion/mushrooms, cheddar,
+                                roasted corn & black beans with ranch dressing 6.49</p>
+                        </div>
+                    </div>
+                    <div class="sammiesListTop" id="sammiesTopRight">
+
+                        <div class="itemTitle">
+                            <p>GO GREEK</p>
+                        </div>
+                        <p class="itemDescription">Romaine, artichoke, feta, tomato, onion, olives with
+                            greek vinaigrette 6.99</p>
+                        <p><br/></p>
+                        <p class="itemTitle">GO-GO GRANNY</p>
+                        <div class="itemDescription">
+                            <p>Garden mix, onion, bleu cheese, granny smith apples,
+                                cranberries, walnuts with balsamic vinaigrette 6.99</p>
+                        </div>
+                        <p><br/></p>
+                        <p class="itemTitle">KICKIN’ CHICKEN SALAD</p>
+                        <div class="itemDescription">
+                            <p>Garden mix, Buffalo Chicken Tenders, bacon, carrots,
+                                celery, bleu cheese crumbles with Ranch dressing 7.99</p>
+                        </div>
+                    </div>
+
+                    <div class="sammiesListBottom" id="sammiesBottom">
+                        <p class="itemTitle">TRY A DIFFERENT DRESSING</p>
+                        <div class="itemDescription">
+                            <p style="z-index: 1; overflow: visible; color: #3289c9;">Balsamic Vinaigrette, Italian, Greek Vinaigrette, Honey Mustard, Bleu Cheese, Ranch,
+                                <br>Homemade Ceasar</p> <p><br></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="headerExtras" class="headers">
+                    <!-- headerExtras -->
+                    <h1>EXTRAS</h1>
+                    <h2>Make your meal mo' better!</h2>
+                </div>
+
+
+                <div id="headerUbees" style="position: relative; top: -40px;">
+                    <!-- headerUbees -->
+                    <img style="float: left; vertical-align: bottom; display: table-cell;" src="images/red-bull-4-pack.jpeg" height="140">
+                    <img style="float:right;" src="images/redbullCanHiResVect.png" height="140" >
+                    <div class="itemsList">
+                        <div style="display: inline; float: left; width: 40%;">
+                            <p class="itemTitle">U SAVE</p>
+                            <p class="itemDescription">Add a Slurp and a side to any burger or Panini 2.25</p>
+                        </div>
+                        <div style="display: inline; float:right; width: 40%;">
+                            <p class="itemTitle">SLURPS</p>
+                            <p class="itemDescription">Coke, Diet Coke, Dr. Pepper, Root Beer, Sprite, Tea 1.99</p>
+                        </div>
+                        <div style="display: inline-block; position: relative; bottom: 20px">
+                            <p class="itemTitle">RED BULL</p>
+                            <p class="itemDescription">Leaded (Regular) or Unleaded (Sugar-Free) 8.99/4-pack</p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div id="headerTreats" class="headers" style="position: relative; top: -75px;">
+                    <!-- headerTreats -->
+                    <h1>TREATS</h1>
+                    <h2>The only things here sweeter than U.</h2>
+                </div>
+
+                <div class="itemsList itemsTreat" style="display: block; overflow: hidden; text-align: center; position: relative; top: -70px;">
+                    <div class="itemsListLeft">
+                        <p class="itemTitle">NY CHEESECAKE</p>
+                        <p class="itemDescription">top it off with chocolate,
+                            caramel or strawberry 4.49</p>
+                        <p class="itemTitle">COOKIE</p>
+                        <p class="itemDescription">chocolate chip or white
+                            chocolate 1.49</p>
+                    </div>
+                    <div class="itemsListRight">
+                        <p class="itemTitle">DEEP FRIED SNICKERS</p>
+                        <p class="itemDescription">topped with chocolate & caramel
+                            sauce 4.49</p>
+                        <p class="itemTitle">CHOC THERAPY</p>
+                        <p class="itemDescription">Chocolate Cobbler 4.49</p>
+                    </div>
+                </div>
+
+            </div>
+            <div id="rightColumnS">
+
+                <img id="bgimg01" src="images/food/img01.jpg" class="bgimg">
+                <img id="bgimg02" src="images/food/img02.jpg" class="bgimg">
+                <img id="bgimg03" src="images/food/img03.jpg" class="bgimg">
+                <img id="bgimg04" src="images/food/img04.jpg" class="bgimg">
+                <img id="bgimg05" src="images/food/img05.jpg" class="bgimg">
+                <img id="bgimg06" src="images/food/img06.jpg" class="bgimg">
+                <img id="bgimg07" src="images/food/img07.jpg" class="bgimg">
+                <img id="bgimg08" src="images/food/img08.jpg" class="bgimg">
+                <img id="bgimg09" src="images/food/img09.jpg" class="bgimg">
+                <img id="bgimg10" src="images/food/img10.jpg" class="bgimg">
+                <img id="bgimg12" src="images/food/img12.png" class="bgimg">
+                <img id="bgimg13" src="images/food/img13.jpg" class="bgimg">
+                <img id="bgimg14" src="images/food/img14.jpg" class="bgimg">
+                <img id="bgimg15" src="images/food/img15.jpg" class="bgimg">
+                <img id="bgimg16" src="images/food/img16.jpg" class="bgimg">
+                <img id="bgimg17" src="images/food/img17.jpg" class="bgimg">
+                <img id="bgimg18" src="images/food/img18.jpg" class="bgimg">
+                <!--<img id="bgimg19" src="images/food/img19.jpg" class="bgimg">-->
+                <img id="bgimg20" src="images/food/img20.jpg" class="bgimg">
+                <img id="bgimg21" src="images/food/img21.jpg" class="bgimg">
+                <img id="bgimg22" src="images/food/img22.jpg" class="bgimg">
+                <img id="bgimg23" src="images/food/img23.jpg" class="bgimg">
+                <img id="bgimg24" src="images/food/img24.jpg" class="bgimg">
+                <img id="bgimg25" src="images/food/img25.jpg" class="bgimg">
+                <img id="bgimg11" src="images/food/img11.jpg" class="bgimg">
+
+                <div id="desc" >
+                    <p id="descimg01" class="bgdesc">CHILI CHEESE NACHOS</p>
+                    <p id="descimg02" class="bgdesc">KICKIN' CHICKEN SALAD</p>
+                    <p id="descimg03" class="bgdesc">SPRING BREAK</p>
+                    <p id="descimg04" class="bgdesc">UB-QUE SALAD</p>
+                    <p id="descimg05" class="bgdesc">FRIED RIGHT CHICKEN TENDERS</p>
+                    <p id="descimg06" class="bgdesc">NY CHEESECAKE</p>
+                    <p id="descimg07" class="bgdesc">MID-TERM MELTDOWN</p>
+                    <p id="descimg08" class="bgdesc">UB-QUE NACHOS</p>
+                    <p id="descimg09" class="bgdesc">&nbsp;&nbsp;&nbsp;UB CHEESY</p>
+                    <p id="descimg10" class="bgdesc">TIGER BALLS</p>
+                    <p id="descimg12" class="bgdesc">&nbsp;&nbsp;&nbsp;&nbsp;U LA LA</p>
+                    <p id="descimg13" class="bgdesc">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WINGS</p>
+                    
+                    <p id="descimg16" class="bgdesc">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;U BLT</p>
+                    <p id="descimg17" class="bgdesc">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HIP DIP</p>
+                    <p id="descimg18" class="bgdesc">GO-GO GRANNY</p>
+                    <!--<p id="descimg19" class="bgdesc">NOCHA AVERAGE SALAD</p>-->
+                    <p id="descimg20" class="bgdesc">QUESADILLA</p>
+                    <p id="descimg21" class="bgdesc">UB FRIED CHEESE BEANS</p>
+                    <p id="descimg22" class="bgdesc">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TNT</p>
+                    <p id="descimg23" class="bgdesc">UB Ceasar Salad</p>
+                    <p id="descimg24" class="bgdesc">&nbsp;&nbsp;Double U</p>
+                    <p id="descimg25" class="bgdesc">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tots</p>
+                    <p id="descimg11" class="bgdesc">&nbsp;&nbsp;GO GREEK</p>
+                </div>
+                
+                <div id="desc2" >
+                    <p id="descimg14" class="bgdesc">DEEP FRIED SNICKERS</p>
+                    <p id="descimg15" class="bgdesc">&nbsp;&nbsp;FRENCH 101</p>
+                    
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript">
+            var descList = new LinkedList(true);
+            var imgFadeSpeed = 2000;
+            var descFadeSpeed = 1200;
+            var imgList = LinkedList.fromArray([$('#bgimg01'),$('#bgimg02'),$('#bgimg04'),$('#bgimg05'),$('#bgimg06'),$('#bgimg07'),$('#bgimg08'),$('#bgimg09'),$('#bgimg10'),$('#bgimg11'),$('#bgimg12'),$('#bgimg13'),$('#bgimg14'),$('#bgimg15'),$('#bgimg16'),$('#bgimg17'),$('#bgimg18'),$('#bgimg20'),$('#bgimg21'),$('#bgimg22'),$('#bgimg23'),$('#bgimg24'),$('#bgimg25'),$('#bgimg03')]);
+            imgList.makeLoop();
+            var descList = LinkedList.fromArray([$('#descimg01'),$('#descimg02'),$('#descimg04'),$('#descimg05'),$('#descimg06'),$('#descimg07'),$('#descimg08'),$('#descimg09'),$('#descimg10'),$('#descimg11'),$('#descimg12'),$('#descimg13'),$('#descimg14'),$('#descimg15'),$('#descimg16'),$('#descimg17'),$('#descimg18'),$('#descimg20'),$('#descimg21'),$('#descimg22'),$('#descimg23'),$('#descimg24'),$('#descimg25'),$('#descimg03')]);
+            descList.makeLoop();
+
+
+
+            var imgCurrent = imgList._head;
+
+            var descCurrent = descList._head;
+
+            function imgFade() {
+//                TweenLite.to(current.data, 3, {css: {opacity: 0.0}, ease: Cubic.easeOut});
+//                TweenLite.to(current.next.data, 2, {css: {opacity: 1.0}, ease: Cubic.easeIn});
+
+                $(imgCurrent.data).fadeOut(imgFadeSpeed);
+                $(descCurrent.data).fadeOut(descFadeSpeed);
+                $(imgCurrent.next.data).fadeIn(imgFadeSpeed);
+                $(descCurrent.next.data).fadeIn(descFadeSpeed);
+                imgCurrent = imgCurrent.next;
+                descCurrent = descCurrent.next;
+            }
+
+            function addListener(obj, eventName, listener) {
+                if (obj.addEventListener) {
+                    obj.addEventListener(eventName, listener, false);
+                } else {
+                    obj.attachEvent("on" + eventName, listener);
+                }
+            }
+
+
+
+
+            function ready() {
+//                TweenLite.to(current.data, 3, {css: {opacity: 1.0}
+//                    , ease: Cubic.easeIn, onComplete: function() {
+//                        window.setInterval(imgFade, 5000);
+//                    }
+//                });
+
+                imgCurrent.data.fadeIn(400, function() {
+                    window.setInterval(imgFade, 5000);
+                });
+
+            }
+
+
+//            addListener(document, "DOMContentLoaded", ready);
+
+            $(document).ready(function() {
+                $(imgCurrent.data).fadeIn(imgFadeSpeed, function() {
+                    window.setInterval(imgFade, 5000);
+                });
+                $(descCurrent.data).fadeIn(descFadeSpeed);
+            });
+        </script>
+    </body>
+</html>
